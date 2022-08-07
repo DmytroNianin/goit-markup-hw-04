@@ -128,6 +128,7 @@
 					<button
 						type="button"
 						class="hero-btn"
+						data-modal-open
 					>
 						Заказать услугу
 					</button>
@@ -212,28 +213,31 @@
 				<div class="conteiner">
 					<h2 class="about-title">Чем мы занимаемся</h2>
 					<ul class="about-img-list list">
-						<li>
+						<li class="about-item">
 							<img
 								src="./img/index/coding.jpg"
 								alt="кодинг"
 								width="370"
 							/>
+							<p class="about-img-titel">Десктопные приложения</p>
 						</li>
 
-						<li>
+						<li class="about-item">
 							<img
 								src="./img/index/comparison.jpg"
 								alt="проверка соответствия"
 								width="370"
 							/>
+							<p class="about-img-titel">Мобильные приложения</p>
 						</li>
 
-						<li>
+						<li class="about-item">
 							<img
 								src="./img/index/stylization.jpg"
 								alt="стилизация"
 								width="370"
 							/>
+							<p class="about-img-titel">Дизайнерские решения</p>
 						</li>
 					</ul>
 				</div>
@@ -727,5 +731,26 @@
 				</div>
 			</div>
 		</footer>
+		<div
+			class="back is-hidden"
+			data-modal
+		>
+			<div class="modal">
+				<button
+					type="button"
+					class="buttom-close"
+					data-modal-close
+				>
+					<svg
+						class="buttom-close-icone"
+						width="11"
+						height="11"
+					>
+						<use xlink:href="./img/icons.svg#icon-close-back"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
